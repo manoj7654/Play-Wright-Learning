@@ -14,20 +14,20 @@ async function selectDate(
     for (let i = 0; i < month.length; i++) {
         selectedMonth.push(await month[i].innerText());
     }
-   for (let i = 0; i < selectedMonth.length; i++) {
+    for (let i = 0; i < selectedMonth.length; i++) {
 
-    if (selectedMonth[i] === targetMonth) {
-    
-        await page.locator('.ui-datepicker-month').selectOption(String(i));
+        if (selectedMonth[i] === targetMonth) {
 
-        break;
+            await page.locator('.ui-datepicker-month').selectOption(String(i));
+
+            break;
+        }
     }
-}
 
     // Select year
     await year.selectOption({ label: targetYear });
 
-const dates = await page.locator('.ui-datepicker-calendar td').all()
+    const dates = await page.locator('.ui-datepicker-calendar td').all()
 
     for (const date of dates) {
         const dateText = await date.innerText();
