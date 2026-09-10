@@ -1,6 +1,6 @@
 import { test, expect, chromium, devices } from "@playwright/test";
 
-//Emolution demo fixture
+//Emolation demo fixture
 test.skip('Emolution fixture', async () => {
 const broser= await chromium.launch();
 const context=await broser.newContext({...devices['iPhone 15'], colorScheme:'dark'});
