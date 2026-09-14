@@ -1,0 +1,9 @@
+<ul>
+ <li>Apple</li>
+ <li>Banana</li>
+ <li>Apple Juice</li>
+</ul>
+
+
+selectedMonth.push(await month[i].innerText());
+the-internet.herokuapp.com/basic_auth
