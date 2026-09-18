@@ -22,8 +22,8 @@ test('Lazi Loading', async ({ page }) => {
         previousHeight = updatedHeight
     }
 
-
-
+  const productCount=await page.locator('#productsDiv').allInnerTexts()
+  console.log(productCount.length)
 })
 
 
