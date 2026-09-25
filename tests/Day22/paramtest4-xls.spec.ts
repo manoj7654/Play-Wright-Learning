@@ -8,7 +8,7 @@ const workbook = XLSX.readFile(excelPath)
 const sheetNames = workbook.SheetNames[0];
 const worksheet = workbook.Sheets[sheetNames]
 
-const excelLoginData = XLSX.utils.sheet_to_json(worksheet)
+const excelLoginData:any = XLSX.utils.sheet_to_json(worksheet)
 console.log(excelLoginData)
 
 test.describe('Data driven login test with json data', async () => {
