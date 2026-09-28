@@ -23,11 +23,33 @@ test.beforeEach(async ({ page }) => {
 
 })
 
+// Runs after each test
+test.afterEach(async({page}, testInfo)=>{
+ console.log(`Test Name: ${testInfo.title}`)
+ console.log(`Test Status: ${testInfo.status}`)
+
+ //Logout
+ await page.locator('#react-burger-menu-btn').click()
+ await page.locator('#logout_sidebar_link').click();
+
+ console.log('Logout Completed')
+
+})
+
+//Test1
 test('Check the title of the page', async ({ page }) => {
     await expect(page).toHaveTitle('Swag Labs')
 })
 
+//Test2
 test('Count the product', async ({ page }) => {
     const prodcut = page.locator('.inventory_item')
     await expect(prodcut).toHaveCount(6)
+})
+
+
+//Test3
+test('Verify the URL of the page', async ({ page }) => {
+    
+    await expect(page).toHaveURL(/inventory/)
 })
