@@ -1,0 +1,25 @@
+{
+  "cookies": [
+    {
+      "name": "auth_session_testuser1",
+      "value": "authenticated",
+      "domain": "sdetqa.vercel.app",
+      "path": "/",
+      "expires": 1790827543,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "auth_session_user",
+      "value": "testuser1",
+      "domain": "sdetqa.vercel.app",
+      "path": "/",
+      "expires": 1790827543,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}
