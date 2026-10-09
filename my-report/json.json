@@ -1,0 +1,415 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\ManojKumar1\\PlayWrightLearning\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "/tests/Day25/reporting.spec.ts"
+    ],
+    "configFile": "C:\\Users\\ManojKumar1\\PlayWrightLearning\\playwright.config.ts",
+    "rootDir": "C:/Users/ManojKumar1/PlayWrightLearning/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/ManojKumar1/PlayWrightLearning/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/ManojKumar1/PlayWrightLearning/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "my-report/json.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "Day25\\reporting.spec.ts",
+      "file": "Day25/reporting.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "demowebshop Home Page Tests",
+          "file": "Day25/reporting.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "@P2 @Regression logotest",
+              "ok": true,
+              "tags": [
+                "P2",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6990,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-09T06:55:29.834Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "afbd0cf01d5315816740-e8cfeaf0dbae96f7d4ad",
+              "file": "Day25/reporting.spec.ts",
+              "line": 6,
+              "column": 9
+            },
+            {
+              "title": "@P2 @Regression title test",
+              "ok": true,
+              "tags": [
+                "P2",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6777,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-09T06:55:29.795Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "afbd0cf01d5315816740-b2590cf792faa7f8b5a0",
+              "file": "Day25/reporting.spec.ts",
+              "line": 11,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "demowebshop User Login Tests",
+          "file": "Day25/reporting.spec.ts",
+          "line": 19,
+          "column": 6,
+          "specs": [
+            {
+              "title": "@P1 @Sanity Login test with in-valid credentials",
+              "ok": true,
+              "tags": [
+                "P1",
+                "Sanity"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7255,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Open Login Page",
+                          "duration": 2579
+                        },
+                        {
+                          "title": "Enter Login Credentials",
+                          "duration": 136
+                        },
+                        {
+                          "title": "Click Login Button",
+                          "duration": 454
+                        },
+                        {
+                          "title": "Verify UnSuccessful Login",
+                          "duration": 70
+                        }
+                      ],
+                      "startTime": "2026-10-09T06:55:29.788Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "afbd0cf01d5315816740-3e8d6796b6b3e7265e6e",
+              "file": "Day25/reporting.spec.ts",
+              "line": 21,
+              "column": 9
+            },
+            {
+              "title": "@P1 @Sanity Login test with valid credentials",
+              "ok": true,
+              "tags": [
+                "P1",
+                "Sanity"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 7539,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Open Login Page",
+                          "duration": 2306
+                        },
+                        {
+                          "title": "Enter Login Credentials",
+                          "duration": 147
+                        },
+                        {
+                          "title": "Click Login Button",
+                          "duration": 880
+                        },
+                        {
+                          "title": "Verify Successful Login",
+                          "duration": 253
+                        }
+                      ],
+                      "startTime": "2026-10-09T06:55:29.812Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "afbd0cf01d5315816740-b9349d962cc29b21aea3",
+              "file": "Day25/reporting.spec.ts",
+              "line": 44,
+              "column": 9
+            },
+            {
+              "title": "@P2 @Regression demowebshop search test",
+              "ok": true,
+              "tags": [
+                "P2",
+                "Regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\Users\\ManojKumar1\\PlayWrightLearning\\tests\\Day25\\reporting.spec.ts",
+                        "line": 66,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-09T06:55:29.130Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "location": {
+                            "file": "C:\\Users\\ManojKumar1\\PlayWrightLearning\\tests\\Day25\\reporting.spec.ts",
+                            "line": 66,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "afbd0cf01d5315816740-13b9a84a4fa8c98249e7",
+              "file": "Day25/reporting.spec.ts",
+              "line": 66,
+              "column": 10
+            },
+            {
+              "title": "@P1 @Sanity demoblaze Login test",
+              "ok": false,
+              "tags": [
+                "P1",
+                "Sanity"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 5,
+                      "status": "failed",
+                      "duration": 11066,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: 'Log out' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: 'Log out' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: 'Log out' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: 'Log out' })\u001b[22m\n\n    at C:\\Users\\ManojKumar1\\PlayWrightLearning\\tests\\Day25\\reporting.spec.ts:80:67",
+                        "location": {
+                          "file": "C:\\Users\\ManojKumar1\\PlayWrightLearning\\tests\\Day25\\reporting.spec.ts",
+                          "column": 67,
+                          "line": 80
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 78 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#loginpassword'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'test@123X'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Log in'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 80 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Log out'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 81 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nameofuser'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Welcome pavanol'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 82 |\u001b[39m\n \u001b[90m 83 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\ManojKumar1\\PlayWrightLearning\\tests\\Day25\\reporting.spec.ts",
+                            "column": 67,
+                            "line": 80
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('link', { name: 'Log out' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: 'Log out' })\u001b[22m\n\n\n\u001b[0m \u001b[90m 78 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'#loginpassword'\u001b[39m)\u001b[33m.\u001b[39mfill(\u001b[32m'test@123X'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m         \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Log in'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 80 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Log out'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 81 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'#nameofuser'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Welcome pavanol'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 82 |\u001b[39m\n \u001b[90m 83 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\ManojKumar1\\PlayWrightLearning\\tests\\Day25\\reporting.spec.ts:80:67\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-10-09T06:55:29.825Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\ManojKumar1\\PlayWrightLearning\\test-results\\Day25-reporting-demowebsho-c8148-Sanity-demoblaze-Login-test-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\ManojKumar1\\PlayWrightLearning\\test-results\\Day25-reporting-demowebsho-c8148-Sanity-demoblaze-Login-test-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\ManojKumar1\\PlayWrightLearning\\test-results\\Day25-reporting-demowebsho-c8148-Sanity-demoblaze-Login-test-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\ManojKumar1\\PlayWrightLearning\\tests\\Day25\\reporting.spec.ts",
+                        "column": 67,
+                        "line": 80
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "afbd0cf01d5315816740-512562ed799f2ae47b69",
+              "file": "Day25/reporting.spec.ts",
+              "line": 74,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-09T06:55:29.045Z",
+    "duration": 13156.322,
+    "expected": 4,
+    "skipped": 1,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

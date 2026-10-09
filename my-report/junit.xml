@@ -1,0 +1,66 @@
+<testsuites id="" name="" tests="6" failures="1" skipped="1" errors="0" time="13.234176999999999">
+<testsuite name="Day25\reporting.spec.ts" timestamp="2026-10-09T07:03:32.912Z" hostname="chromium" tests="6" failures="1" skipped="1" time="39.072" errors="0">
+<testcase name="demowebshop Home Page Tests › @P2 @Regression logotest" classname="Day25\reporting.spec.ts" time="6.994">
+</testcase>
+<testcase name="demowebshop Home Page Tests › @P2 @Regression title test" classname="Day25\reporting.spec.ts" time="6.666">
+</testcase>
+<testcase name="demowebshop User Login Tests › @P1 @Sanity Login test with in-valid credentials" classname="Day25\reporting.spec.ts" time="6.858">
+</testcase>
+<testcase name="demowebshop User Login Tests › @P1 @Sanity Login test with valid credentials" classname="Day25\reporting.spec.ts" time="7.723">
+</testcase>
+<testcase name="demowebshop User Login Tests › @P2 @Regression demowebshop search test" classname="Day25\reporting.spec.ts">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+<testcase name="demowebshop User Login Tests › @P1 @Sanity demoblaze Login test" classname="Day25\reporting.spec.ts" time="10.831">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\Day25-reporting-demowebsho-c8148-Sanity-demoblaze-Login-test-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\Day25-reporting-demowebsho-c8148-Sanity-demoblaze-Login-test-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-results\Day25-reporting-demowebsho-c8148-Sanity-demoblaze-Login-test-chromium\error-context.md]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [chromium] › Day25\reporting.spec.ts:74:9 › demowebshop User Login Tests › @P1 @Sanity demoblaze Login test 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('link', { name: 'Log out' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByRole('link', { name: 'Log out' })
+
+
+      78 |         await page.locator('#loginpassword').fill('test@123X');
+      79 |         await page.getByRole('button', { name: 'Log in' }).click();
+    > 80 |         await expect(page.getByRole('link', { name: 'Log out' })).toBeVisible();
+         |                                                                   ^
+      81 |         await expect(page.locator('#nameofuser')).toContainText('Welcome pavanol');
+      82 |
+      83 |     });
+        at C:\Users\ManojKumar1\PlayWrightLearning\tests\Day25\reporting.spec.ts:80:67
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\Day25-reporting-demowebsho-c8148-Sanity-demoblaze-Login-test-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\Day25-reporting-demowebsho-c8148-Sanity-demoblaze-Login-test-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\Day25-reporting-demowebsho-c8148-Sanity-demoblaze-Login-test-chromium\error-context.md
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>
