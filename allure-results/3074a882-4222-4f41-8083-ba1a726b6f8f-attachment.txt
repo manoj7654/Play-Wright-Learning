@@ -1,0 +1,5 @@
+{
+  originalname: 'dummy.txt',
+  filename: '9712.txt',
+  location: 'https://api.escuelajs.co/api/v1/files/9712.txt'
+}

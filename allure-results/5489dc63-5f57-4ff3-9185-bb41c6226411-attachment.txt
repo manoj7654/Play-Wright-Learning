@@ -1,0 +1,5 @@
+{
+  originalname: 'pdf-sample.pdf',
+  filename: 'c232.pdf',
+  location: 'https://api.escuelajs.co/api/v1/files/c232.pdf'
+}

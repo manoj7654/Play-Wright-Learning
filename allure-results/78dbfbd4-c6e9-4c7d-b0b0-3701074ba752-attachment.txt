@@ -1,0 +1,20 @@
+Booking details created successfully {
+  bookingid: 4143,
+  booking: {
+    firstname: 'Mala',
+    lastname: 'Devi',
+    totalprice: 6000,
+    depositpaid: true,
+    bookingdates: { checkin: '2026-10-22', checkout: '2026-10-23' },
+    additionalneeds: 'Breakfast'
+  }
+}
+Fetch booking details successfully by Id {
+  firstname: 'Mala',
+  lastname: 'Devi',
+  totalprice: 6000,
+  depositpaid: true,
+  bookingdates: { checkin: '2026-10-22', checkout: '2026-10-23' },
+  additionalneeds: 'Breakfast'
+}
+Token Generated Successfully a38f384a7efa3cc

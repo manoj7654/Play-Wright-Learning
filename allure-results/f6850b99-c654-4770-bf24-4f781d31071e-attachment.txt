@@ -1,0 +1,5 @@
+{
+  originalname: 'pdf-sample.pdf',
+  filename: 'de14.pdf',
+  location: 'https://api.escuelajs.co/api/v1/files/de14.pdf'
+}

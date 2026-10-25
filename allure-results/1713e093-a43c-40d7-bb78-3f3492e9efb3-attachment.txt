@@ -1,0 +1,5 @@
+{
+  originalname: 'sample.txt',
+  filename: '059f.txt',
+  location: 'https://api.escuelajs.co/api/v1/files/059f.txt'
+}

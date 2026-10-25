@@ -1,0 +1,69 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Day30\get_booking_details.spec.ts >> Get booking details by parameter
+- Location: tests\Day30\get_booking_details.spec.ts:26:5
+
+# Error details
+
+```
+Error: expect(received).toHaveProperty(path)
+
+Expected path: "firstname"
+Received path: []
+
+Received value: []
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '@playwright/test';
+  2  | const BaseUrl = 'https://restful-booker.herokuapp.com';
+  3  | 
+  4  | test('Get booking details by ID', async ({ request }) => {
+  5  | 
+  6  |     const id=2308;
+  7  | 
+  8  |     const response =await request.get(`${BaseUrl}/booking/${id}`)
+  9  |     const responseBody= await response.json()
+  10 |     console.log(responseBody)
+  11 | 
+  12 |     //Validate status code and status text
+  13 |     expect(response.status()).toBe(200);
+  14 |     expect(response.statusText()).toBe('OK');    
+  15 | 
+  16 |     //Validate fields in the response body
+  17 |     expect(responseBody).toHaveProperty('firstname');
+  18 |     expect(responseBody).toHaveProperty('lastname');
+  19 |     expect(responseBody).toHaveProperty('totalprice');
+  20 |     expect(responseBody).toHaveProperty('depositpaid');
+  21 |     expect(responseBody).toHaveProperty('bookingdates');
+  22 |     expect(responseBody).toHaveProperty('additionalneeds');
+  23 | })
+  24 | 
+  25 | 
+  26 | test('Get booking details by parameter', async ({ request }) => {
+  27 | 
+  28 |     const firstname='Marry'
+  29 |     const lastname="Ericsson"
+  30 | 
+  31 |     const response =await request.get(`${BaseUrl}/booking`,{params:{firstname:firstname,lastname:lastname}})
+  32 |     const responseBody= await response.json()
+  33 |     console.log(responseBody)
+  34 | 
+  35 |     //Validate status code and status text
+  36 |     expect(response.status()).toBe(200);
+  37 |     expect(response.statusText()).toBe('OK');    
+  38 | 
+  39 |     //Validate fields in the response body
+> 40 |     expect(responseBody).toHaveProperty('firstname');
+     |                          ^ Error: expect(received).toHaveProperty(path)
+  41 |     expect(responseBody).toHaveProperty('lastname');
+  42 | })
+```

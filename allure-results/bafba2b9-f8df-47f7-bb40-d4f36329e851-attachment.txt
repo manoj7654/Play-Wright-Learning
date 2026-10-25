@@ -1,0 +1,11 @@
+{
+  bookingid: 2146,
+  booking: {
+    firstname: 'Leopoldo',
+    lastname: 'Hayes',
+    totalprice: 855,
+    depositpaid: false,
+    bookingdates: { checkin: '2026-10-21', checkout: '2026-10-26' },
+    additionalneeds: 'Breakfast'
+  }
+}
